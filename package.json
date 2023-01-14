@@ -12,7 +12,9 @@
     "volto-addon",
     "volto",
     "plone",
-    "react"
+    "react",
+    "navigation",
+    "menu"
   ],
   "scripts": {
     "i18n": "NODE_ENV=production node src/i18n.js"
@@ -29,5 +31,8 @@
     "@release-it/conventional-changelog": "^2.0.1",
     "husky": "^6.0.0",
     "release-it": "^14.10.1"
+  },
+  "bugs": {
+    "url": "https://github.com/kenmanheimer/volto-navigation-dropdown/issues"
   }
 }

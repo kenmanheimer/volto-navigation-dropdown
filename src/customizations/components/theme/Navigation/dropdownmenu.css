@@ -1,0 +1,7 @@
+i.icon,
+i.icons {
+  font-size: 1em !important;
+}
+.active.item {
+    border-color: #E40166 !important;
+}
