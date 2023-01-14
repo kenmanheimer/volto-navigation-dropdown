@@ -9,40 +9,24 @@ const NavItems = ({ items, lang }) => {
     <>
       {items.map((item) =>
         item && item.items && item.items.length > 0 ? (
-          <Dropdown simple scrolling
-                    text={item.title} className="item" key={item.url}>
-            <Dropdown.Menu text={item.title} key={item.url}>
+          <Dropdown simple
+                    text={item.title}
+                    className="item"
+                    key={item.url}>
+            <Dropdown.Menu>
               <NavItem
                 item={item}
                 lang={lang}
                 key={item.url}
               />
               <Dropdown.Divider />
-              {item.items.map((dropdownitem) => (
-                dropdownitem && dropdownitem.items && dropdownitem.items.length > 0 ? (
-                  <Dropdown simple open="{isInternalURL(dropdownitem.url)}" scrolling
-                            text={dropdownitem.title} className="item" key={dropdownitem.url}>
-                    <Dropdown.Menu key={dropdownitem.url}>
-                      <NavItems
-                        items={dropdownitem.items}
-                        lang={lang}
-                      />
-                    </Dropdown.Menu>
-                  </Dropdown>
-                ) : (
-                  <NavItem
-                    item={dropdownitem}
-                    lang={lang}
-                    key={dropdownitem.url}
-                  />
-                )
-              ))}
+              <NavItems items={item.items} lang={lang} />
             </Dropdown.Menu>
           </Dropdown>
         ) : (
           <NavItem item={item} lang={lang} key={item.url} />
         ),
-      )}
+      )};
     </>
   );
 };
