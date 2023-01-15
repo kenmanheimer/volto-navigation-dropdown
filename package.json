@@ -1,5 +1,5 @@
 {
-  "name": "volto-navigation-dropdown",
+  "name": "@myriadicity/volto-navigation-dropdown-stubborn",
   "version": "0.1.0",
   "description": "Volto website navigation dropdown menu",
   "main": "src/index.js",
