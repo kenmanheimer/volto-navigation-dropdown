@@ -2,10 +2,23 @@
 
 Volto website navigation dropdown menu prototype.
   
-When ready I plan to release this as a pull request to [plone/volto](https://github.com/plone/volto) and [the volto-menu-customization addon](https://github.com/codesyntax/volto-menu-customization).
+At initial release the new Plone 6 Volto frontend comes without
+comprehensive site navigation. The navigation menu includes entries for
+only the top-level pages. This is insufficient for most substantial
+websites.
 
-It was Created with [voltocli](https://github.com/nzambello/voltocli). I learned about the component to customize from [the volto-menu-customization addon](https://github.com/codesyntax/volto-menu-customization). The [React Semanti-UI Dropown documentation](https://react.semantic-ui.com/modules/dropdown) provides key info for developing the functionality.
+While a few addon options are available, none provide simple automated
+creation of comprehensive navigation of a nested site structure. This addon
+is an effort to rectify that.
 
-## Usage
+The current functionality is nearly complete but rough at best. See [the
+repository issue
+tracker](https://github.com/kenmanheimer/volto-navigation-dropdown/issues)
+for details.
 
-This addon implements nested dropdown menus for site navigation.
+Issues: 
+
+* Using href for topmost links, need to determine how to get proper
+  internal traversal. We need to enable for the base Dropdown menu elements functionality
+  like what NavItem achieves.
+* Menus aren't closing on select.
