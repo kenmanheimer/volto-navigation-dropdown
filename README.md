@@ -1,24 +1,16 @@
-# volto-navigation-dropdown
+# volto-navigation-dropdown-stubborn
 
-Volto website navigation dropdown menu prototype.
-  
+One of two Volto website navigation dropdown menu prototypes.
+
 At initial release the new Plone 6 Volto frontend comes without
-comprehensive site navigation. The navigation menu includes entries for
-only the top-level pages. This is insufficient for most substantial
-websites.
+comprehensive site navigation - the navigation menu includes entries for
+only the top-level pages. This is a critical lack for some kinds of
+websites, particularly the kind that I'm working on.
 
-While a few addon options are available, none provide simple automated
-creation of comprehensive navigation of a nested site structure. This addon
-is an effort to rectify that.
+This repository holds two versions of code that provide the missing navigation functionality, but with different problems. I am hoping that I can get help to fix the problems so we can arrive at fully working code to incorporate in Volto.
 
-The current functionality is nearly complete but rough at best. See [the
-repository issue
-tracker](https://github.com/kenmanheimer/volto-navigation-dropdown/issues)
-for details.
+This "stubborn" version provides a dropdown menu that arises on mouse hover (on the desktop, you have to click on mobile). The problem is that the menus won't close after you select an entry. They can get in the way of other stuff on the page.
 
-Issues: 
+This Plone 6 Volto frontend addon is available as an npm package: [@myriadicity/volto-navigation-dropdown-stubborn](https://www.npmjs.com/package/@myriadicity/volto-navigation-dropdown-stubborn)
 
-* Using href for topmost links, need to determine how to get proper
-  internal traversal. We need to enable for the base Dropdown menu elements functionality
-  like what NavItem achieves.
-* Menus aren't closing on select.
+The other version of this package doesn't have the menu closing problem, but it has a complicated menu arrangement to workaround a problem clicking on the container entries. You can find that version on the `oblique` branch of this repository, with a corresponding addon available at [@myriadicity/volto-navigation-dropdown-oblique](https://www.npmjs.com/package/@myriadicity/volto-navigation-dropdown-oblique).
