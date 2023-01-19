@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "repository": "https://github.com/kenmanheimer/volto-navigation-dropdown.git",
   "homepage": "https://github.com/kenmanheimer/volto-navigation-dropdown.git#readme",
-  "bugs": "https://github.com/kenmanheimer/volto-navigation-dropdown.git/issues",
+  "bugs": {
+    "url": "https://github.com/kenmanheimer/volto-navigation-dropdown/issues"
+  },
   "author": "Ken Manheimer",
   "license": "MIT",
   "keywords": [
@@ -28,11 +30,9 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
+    "@plone/scripts": "*",
     "@release-it/conventional-changelog": "^2.0.1",
     "husky": "^6.0.0",
     "release-it": "^14.10.1"
-  },
-  "bugs": {
-    "url": "https://github.com/kenmanheimer/volto-navigation-dropdown/issues"
   }
 }
