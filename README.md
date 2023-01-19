@@ -14,3 +14,6 @@ This "stubborn" version provides a dropdown menu that arises on mouse hover (on 
 This Plone 6 Volto frontend addon is available as an npm package: [@myriadicity/volto-navigation-dropdown-stubborn](https://www.npmjs.com/package/@myriadicity/volto-navigation-dropdown-stubborn)
 
 The other version of this package doesn't have the menu closing problem, but it has a complicated menu arrangement to workaround a problem clicking on the container entries. You can find that version on the `oblique` branch of this repository, with a corresponding addon available at [@myriadicity/volto-navigation-dropdown-oblique](https://www.npmjs.com/package/@myriadicity/volto-navigation-dropdown-oblique).
+
+I posted a description of this whole situation to the Plone community: [Work On
+Plone 6 Navigation Menus - Development / Plone 6 UI (Volto)](https://community.plone.org/t/work-on-plone-6-navigation-menus/16169)
