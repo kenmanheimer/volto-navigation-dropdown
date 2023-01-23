@@ -9,20 +9,23 @@ const NavItems = ({ items, lang, interior=false }) => {
       {items.map((item) =>
         item && item.items && item.items.length > 0 ? (
           <div class="ui compact menu">
+            <div class="ui simple dropdown item">
               <NavItem
                 item={item}
                 lang={lang}
-                key={item.url}
-                className="header" />
+                key={item.url} />
               <i class="dropdown icon"></i>
-            <div class="menu">
-              <NavItems items={item.items} lang={lang} interior={true} />
+              <div class="menu">
+                <NavItems items={item.items} lang={lang} interior={true} />
+              </div>
             </div>
           </div>
         ) : (
-          <NavItem item={item} lang={lang} key={item.url} />
+          <div class="ui simple dropdown item">
+            <NavItem item={item} lang={lang} key={item.url} />
+          </div>
         ),
-      )};
+      )}
     </>
   );
 };
