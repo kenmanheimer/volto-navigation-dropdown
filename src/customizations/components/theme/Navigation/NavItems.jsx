@@ -8,13 +8,12 @@ const NavItems = ({ items, lang, interior=false, depth=1 }) => {
     <>
       {items.map((item) =>
         item && item.items && item.items.length > 0 ? (
-            <div class="ui simple dropdown item">
+            <div className="ui simple dropdown item" key={item.url} >
               <NavItem
                 item={item}
-                lang={lang}
-                key={item.url} />
-              <i class="dropdown icon"></i>
-              <div class="menu">
+                lang={lang} />
+              <i className="dropdown icon"></i>
+              <div className="menu">
                 <NavItems items={item.items}
                           lang={lang}
                           interior={true}
@@ -25,8 +24,8 @@ const NavItems = ({ items, lang, interior=false, depth=1 }) => {
           ( depth > 1 ) ? (
             <NavItem item={item} lang={lang} key={item.url} />
           ) : (
-            <div className="item">
-              <NavItem item={item} lang={lang} key={item.url} />
+            <div className="item" key={item.url}>
+              <NavItem item={item} lang={lang} />
             </div>
           )
         )
