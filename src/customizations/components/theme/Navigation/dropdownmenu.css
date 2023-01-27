@@ -2,3 +2,7 @@ i.icon,
 i.icons {
   font-size: 1em !important;
 }
+.navigation .ui.secondary.pointing.menu .item, .tools .ui.secondary.pointing.menu .item {
+  padding: .2em !important;
+  margin: .1em !important;
+}
