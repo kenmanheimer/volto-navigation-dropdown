@@ -1,7 +1,7 @@
 {
   "name": "@myriadicity/volto-navigation-dropdown-stubborn",
-  "version": "0.1.1",
-  "description": "Volto website navigation dropdown menu",
+  "version": "0.1.2",
+  "description": "Volto website navigation dropdown menu with stubborn exposure problems",
   "main": "src/index.js",
   "repository": "https://github.com/kenmanheimer/volto-navigation-dropdown.git",
   "homepage": "https://github.com/kenmanheimer/volto-navigation-dropdown.git#readme",
