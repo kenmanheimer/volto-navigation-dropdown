@@ -1,6 +1,6 @@
 {
   "name": "@myriadicity/volto-navigation-dropdown-oblique",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Volto website navigation dropdown menu",
   "main": "src/index.js",
   "repository": "https://github.com/kenmanheimer/volto-navigation-dropdown.git",
@@ -15,7 +15,7 @@
     "react",
     "navigation",
     "menu"
-  ],
+  ]
   "scripts": {
     "i18n": "NODE_ENV=production node src/i18n.js"
   },
