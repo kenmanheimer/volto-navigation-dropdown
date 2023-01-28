@@ -1,4 +1,4 @@
-# volto-navigation-dropdown-stubborn
+# volto-navigation-dropdown
 
 Prototype Volto website navigation dropdown menu functionality.
 
@@ -17,7 +17,7 @@ levels are onscreen.
 
 See the versions of this README.md in the respective branches, `stubborn` and `oblique`, for descriptions of the preliminary versions.
 
-This Plone 6 Volto frontend addon prototype will be available as an npm package: [@myriadicity/volto-navigation-dropdown](https://www.npmjs.com/package/@myriadicity/volto-navigation-dropdown)
+This Plone 6 Volto frontend addon prototype is available as an npm package: [@myriadicity/volto-navigation-dropdown](https://www.npmjs.com/package/@myriadicity/volto-navigation-dropdown)
 
 (The malfunctioning versions are also available in repository branches
 "oblique" and "stubborn" and as npm modules
