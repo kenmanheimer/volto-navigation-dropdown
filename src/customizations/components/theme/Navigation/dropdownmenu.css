@@ -24,3 +24,7 @@ i.icons {
   /* Effectively eliminate gap between base menu element and offspring menu: */
   margin-top: 1px !important;
 }
+.ui.simple.dropdown .menu {
+  /* Make menu fade-in discernable but still brief: */
+  transition: opacity 0.4s ease !important;
+}
