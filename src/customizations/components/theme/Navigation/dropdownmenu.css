@@ -20,3 +20,7 @@ i.icons {
 .ui.menu .item > i.dropdown.icon {
   margin: 0em !important;
 }
+.ui.secondary.menu .dropdown.item > .menu, .ui.text.menu .dropdown.item > .menu {
+  /* Effectively eliminate gap between base menu element and offspring menu: */
+  margin-top: 1px !important;
+}
