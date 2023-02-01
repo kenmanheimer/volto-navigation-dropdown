@@ -27,3 +27,10 @@ and
 
 I posted a description of this situation to the Plone community: [Work On
 Plone 6 Navigation Menus - Development / Plone 6 UI (Volto)](https://community.plone.org/t/work-on-plone-6-navigation-menus/16169)
+
+I got valuable clue about oragnizing this code from some other Volto
+navmenu addons:
+
+* (CodeSyntax volto-menu-customization)[codesyntax/volto-menu-customization]
+* (Collective volto-men-dropdown)[https://github.com/collective/volto-dropdownmenu]
+
