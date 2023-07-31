@@ -1,6 +1,6 @@
 {
   "name": "@myriadicity/volto-navigation-dropdown",
-  "version": "0.2.2",
+  "version": "0.2.3-alpha.1",
   "description": "Volto website navigation dropdown menu",
   "main": "src/index.js",
   "repository": "https://github.com/kenmanheimer/volto-navigation-dropdown.git",

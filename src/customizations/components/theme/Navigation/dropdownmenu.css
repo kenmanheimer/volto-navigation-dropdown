@@ -1,28 +1,40 @@
-i.icon,
-i.icons {
+.ui.dropdown.item i.icon,
+.ui.dropdown.item i.icons {
   font-size: 1em !important;           /* Make icon proportional to text. */
+  padding: .1em !important;
 }
 .ui.menu .ui.dropdown.item .menu .item {
   display: flex !important;     /* Horizontally align icon with entry text. */
+  padding: .2em !important;
 }
+/* Implement wrap / overflow? https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_text/Wrapping_breaking_text */
+/*.ui.menu .ui.dropdown.item .menu .item {
+  inline-size: 10em !important; 
+  overflow-wrap: break-word !important;
+} */
 .ui.menu .dropdown.item .menu {
   min-width: fit-content !important;   /* Snug menu to contents width. */
 }
+
 .navigation .ui.secondary.pointing.menu .item, .tools .ui.secondary.pointing.menu .item {
-  padding: .0em !important;
+  padding: .2em !important;
   margin: 0em .2em 0em !important;
   text-transform: none !important;     /* Don't uppercase container titles*/
 }
 .ui.menu .ui.dropdown .menu > .item, .ui.menu .dropdown-popup .ui.popup .menu > .item {
-  padding: 0em !important;
-  margin: 0em !important;
+  padding: .5em !important;
+  margin: 0px !important;
+}
+.ui.menu .ui.dropdown .menu > .item, .ui.menu .dropdown-popup .ui.popup .menu > .item {
+  padding: .5em !important;
 }
 .ui.menu .item > i.dropdown.icon {
+  padding: 0em !important;
   margin: 0em !important;
 }
 .ui.secondary.menu .dropdown.item > .menu, .ui.text.menu .dropdown.item > .menu {
   /* Effectively eliminate gap between base menu element and offspring menu: */
-  margin-top: 1px !important;
+  margin-top: 0px !important;
 }
 .ui.simple.dropdown .menu {
   /* Make menu fade-in discernable but still brief: */
