@@ -21,13 +21,6 @@
   margin: 0em .2em 0em !important;
   text-transform: none !important;     /* Don't uppercase container titles*/
 }
-.ui.menu .ui.dropdown .menu > .item, .ui.menu .dropdown-popup .ui.popup .menu > .item {
-  padding: .5em !important;
-  margin: 0px !important;
-}
-.ui.menu .ui.dropdown .menu > .item, .ui.menu .dropdown-popup .ui.popup .menu > .item {
-  padding: .5em !important;
-}
 .ui.menu .item > i.dropdown.icon {
   padding: 0em !important;
   margin: 0em !important;
