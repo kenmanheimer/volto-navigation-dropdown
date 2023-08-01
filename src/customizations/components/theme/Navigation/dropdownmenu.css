@@ -1,7 +1,7 @@
 .ui.dropdown.item i.icon,
 .ui.dropdown.item i.icons {
   font-size: 1em !important;           /* Make icon proportional to text. */
-  padding: .1em !important;
+  padding: 0em !important;
 }
 .ui.menu .ui.dropdown.item .menu .item {
   display: flex !important;     /* Horizontally align icon with entry text. */
