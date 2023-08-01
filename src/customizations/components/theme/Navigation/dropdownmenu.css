@@ -1,10 +1,9 @@
-/* .ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
-   display: -webkit-box !important;
-   min-width: 12em;
-   max-width: 15em;
-   white-space: wrap;
-   }
-  */
+.ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
+  display: -webkit-box !important;
+  min-width: 12em;
+  max-width: 15em;
+  white-space: wrap;
+}
 .ui.dropdown.item i.icon,
 .ui.dropdown.item i.icons {
   font-size: 1em !important;           /* Make icon proportional to text. */
@@ -20,11 +19,10 @@
 .ui.menu .dropdown.item .menu {
   min-width: fit-content !important;   /* Snug menu to contents width. */
 }
-
 .navigation .ui.secondary.pointing.menu .item, .tools .ui.secondary.pointing.menu .item {
-  padding: .2em !important;
-  margin: 0em .2em 0em !important;
-  text-transform: none !important;     /* Don't uppercase container titles*/
+  padding: 0em !important;
+  margin: 0em 10px 0em 5px !important;  /* Be careful: this can push icon being outside menu box! */
+  text-transform: none !important;     /* Don't upcase container titles*/
 }
 .ui.menu .item > i.dropdown.icon {
   padding: 0em !important;
