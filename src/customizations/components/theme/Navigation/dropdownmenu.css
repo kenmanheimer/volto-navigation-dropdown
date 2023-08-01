@@ -33,3 +33,6 @@
   /* Make menu fade-in discernable but still brief: */
   transition: opacity 0.4s ease !important;
 }
+.ui.menu .item {
+  color: black !important;  /* Kludge so nested menu headers don't get pale. */
+}
