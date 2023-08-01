@@ -11,7 +11,8 @@ const NavItems = ({ items, lang, interior=false, depth=1 }) => {
             <div className="ui simple dropdown item" key={item.url} >
               <NavItem
                 item={item}
-                lang={lang} /> <i className="dropdown icon"></i>
+                lang={lang} />
+              <i className="dropdown icon"></i>
               <div className="menu">
                 <NavItems items={item.items}
                           lang={lang}
