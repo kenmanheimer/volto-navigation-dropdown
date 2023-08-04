@@ -1,36 +1,90 @@
 # volto-navigation-dropdown
 
-Prototype Volto website navigation dropdown menu functionality.
+Plone 6 Volto website navigation menubar with dropdown menus for nested folders.
 
-The new Plone 6 Volto frontend initial release lacks comprehensive site
-navigation: the navigation menu includes entries for only the top-level
-pages. This is a critical lack for some kinds of websites, particularly
-information sharing websites intended for browsing.
+Site navigation with automatically populated nested menus that open on
+hover.  Entries on the currently visited path are highlighted, updating as
+you select new locations.
 
-This repository holds a few versions of code that provide the missing
-navigation functionality, including some preliminary versions with
-different problems and this main version which is coming to provide the
-full functionality, though currently with at least one problem to be
-resolved. Specifically, we need to get submenus appearing in both left and
-right sides, alternating with depth, so menu entries for deeply embedded
-levels are onscreen.
+Available:
 
-See the versions of this README.md in the respective branches, `stubborn` and `oblique`, for descriptions of the preliminary versions.
+* As an npm package: [@myriadicity/volto-navigation-dropdown](https://www.npmjs.com/package/@myriadicity/volto-navigation-dropdown)
+* On github: [kenmanheimer/volto-navigation-dropdown](https://github.com/kenmanheimer/volto-navigation-dropdown)
 
-This Plone 6 Volto frontend addon prototype is available as an npm package: [@myriadicity/volto-navigation-dropdown](https://www.npmjs.com/package/@myriadicity/volto-navigation-dropdown)
+I posted some discussion about my reasons for developing this to the Plone
+community: [Work On Plone 6 Navigation Menus - Development / Plone 6 UI
+(Volto)](https://community.plone.org/t/work-on-plone-6-navigation-menus/16169).
 
-(The malfunctioning versions are also available in repository branches
-"oblique" and "stubborn" and as npm modules
-[@myriadicity/volto-navigation-dropdown-oblique](https://www.npmjs.com/package/@myriadicity/volto-navigation-dropdown-oblique)
-and
-[@myriadicity/volto-navigation-dropdown-stubborn](https://www.npmjs.com/package/@myriadicity/volto-navigation-dropdown-stubborn).)
+Further work needed:
 
-I posted a description of this situation to the Plone community: [Work On
-Plone 6 Navigation Menus - Development / Plone 6 UI (Volto)](https://community.plone.org/t/work-on-plone-6-navigation-menus/16169)
+* Screen boundaries are not handled well, so that entries in hierarchies
+  that stretch to the edge of the screen can be unselectable. This is a
+  problem in the underlying React libraries but could be handled with edge
+  detection and menu-opening changes. I haven't hit up against the limits
+  in practical applications.
+* There are some menu layout irregularities:
+  * Unintended indentation of entries for nested containers
+  * Excessive right justification for folder icons in entries whose titles
+    are wrapped.
+* General parameterization of layout parameters like menu minimum and
+  maximum width.
 
-I got valuable clue about oragnizing this code from some other Volto
-navmenu addons:
+## Getting started
 
-* (CodeSyntax volto-menu-customization)[codesyntax/volto-menu-customization]
-* (Collective volto-men-dropdown)[https://github.com/collective/volto-dropdownmenu]
+### Try volto-addon-template with Docker
 
+      git clone https://github.com/eea/volto-addon-template.git
+            cd volto-addon-template
+                  make
+                        make start
+
+Go to http://localhost:3000
+
+### Add volto-addon-template to your Volto project
+
+1. Make sure you have a [Plone backend](https://plone.org/download) up-and-running at http://localhost:8080/Plone
+
+   ```Bash
+      docker compose up backend
+         ```
+
+1. Start Volto frontend
+
+* If you already have a volto project, just update `package.json`:
+
+  ```JSON
+  "addons": [
+      "@eeacms/volto-addon-template"
+  ],
+
+  "dependencies": {
+      "@eeacms/volto-addon-template": "*"
+  }
+  ```
+
+* If not, create one:
+
+  ```
+  npm install -g yo @plone/generator-volto
+  yo @plone/volto my-volto-project --canary --addon @eeacms/volto-addon-template
+  cd my-volto-project
+  ```
+
+1. Install new add-ons and restart Volto:
+
+   ```
+   yarn
+   yarn start
+   ```
+
+1. Go to http://localhost:3000
+
+1. Happy editing!
+
+## How to contribute
+
+See [DEVELOP.md](https://github.com/eea/volto-addon-template/blob/master/DEVELOP.md).
+
+## Copyright and license
+
+See [LICENSE](https://github.com/eea/volto-addon-template/blob/master/LICENSE) for details.
