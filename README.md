@@ -31,16 +31,16 @@ Further work needed:
 
 ## Getting started
 
-### Try volto-addon-template with Docker
+### Try volto-navigation-dropdown with Docker
 
-      git clone https://github.com/eea/volto-addon-template.git
-      cd volto-addon-template
+      git clone https://github.com/kenmanheimer/volto-navigation-dropdown.git
+      cd volto-navigation-dropdown
       make
       make start
 
 Go to http://localhost:3000
 
-### Add volto-addon-template to your Volto project
+### Add volto-navigation-dropdown to your Volto project
 
 1. Make sure you have a [Plone backend](https://plone.org/download) up-and-running at http://localhost:8080/Plone
 
@@ -54,11 +54,11 @@ Go to http://localhost:3000
 
   ```JSON
   "addons": [
-      "@eeacms/volto-addon-template"
+      "@kenmanheimer/volto-navigation-dropdown"
   ],
 
   "dependencies": {
-      "@eeacms/volto-addon-template": "*"
+      "@kenmanheimer/volto-navigation-dropdown": "*"
   }
   ```
 
@@ -66,7 +66,7 @@ Go to http://localhost:3000
 
   ```
   npm install -g yo @plone/generator-volto
-  yo @plone/volto my-volto-project --canary --addon @eeacms/volto-addon-template
+  yo @plone/volto my-volto-project --canary --addon @kenmanheimer/volto-navigation-dropdown
   cd my-volto-project
   ```
 
@@ -83,8 +83,8 @@ Go to http://localhost:3000
 
 ## How to contribute
 
-See [DEVELOP.md](https://github.com/eea/volto-addon-template/blob/master/DEVELOP.md).
+See [DEVELOP.md](https://github.com/kenmanheimer/volto-navigation-dropdown/blob/master/DEVELOP.md).
 
 ## Copyright and license
 
-See [LICENSE](https://github.com/eea/volto-addon-template/blob/master/LICENSE) for details.
+See [LICENSE](https://github.com/kenmanheimer/volto-navigation-dropdown/blob/master/LICENSE) for details.
