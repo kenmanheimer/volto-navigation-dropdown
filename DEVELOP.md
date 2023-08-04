@@ -2,7 +2,7 @@
 
 ## Develop
 
-(If you want to make alterations to this addon then you probably want to fork the repository and use that fork for the following recipes. You can then submit pull requests to propose incorporating the changes in the original.)
+(If you want to make alterations to this addon then you probably want to fork the repository and use that fork for the following recipes. You can then submit pull requests to propose incorporating your changes in the original.)
 
 1. Make sure you have `docker` and `docker compose` installed and running on your machine:
 
