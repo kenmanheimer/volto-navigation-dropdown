@@ -14,6 +14,9 @@ const NavItems = ({ items, lang, interior=false, depth=1 }) => {
                 lang={lang} />
               <i className="dropdown icon"></i>
               <div className="menu">
+                <NavItem
+                  item={item}
+                  lang={lang} />
                 <NavItems items={item.items}
                           lang={lang}
                           interior={true}
