@@ -29,7 +29,27 @@ Further work needed:
 * General parameterization of layout parameters like menu minimum and
   maximum width.
 
-## Getting started
+Version 0.3.0 introduces a configurable menu layout change, governed by a
+setting variable:
+
+* `config.settings.dropdownmenu.selfInContents` true (the default) causes the first
+  entry in the container's submenu to be for the container itself.
+  Setting it to false inhibits that, so visitors would have to know that
+  they can click on the container entry outside of the submenu to visit its
+  page.
+
+  The redundant inclusion of the container entry is default because some
+  visitors might not realize that they can click on the superior entry. The
+  redundant entry won't prevent anything, and anyone who is surprised by it
+  will be able to easily figure it out and get used to it.
+
+  To inhibit the redundant entry include:
+
+      if (config.settings.dropdownmenu) {
+        config.settings.dropdownmenu = false;
+      }
+
+  in your instance configuration.
 
 ### Try volto-navigation-dropdown with Docker
 

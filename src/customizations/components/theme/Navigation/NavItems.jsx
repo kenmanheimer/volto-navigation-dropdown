@@ -1,4 +1,5 @@
 import React from 'react';
+import config from '@plone/volto/registry';
 import NavItem from '@plone/volto/components/theme/Navigation/NavItem';
 import { Dropdown } from 'semantic-ui-react';
 import './dropdownmenu.css';
@@ -14,9 +15,11 @@ const NavItems = ({ items, lang, interior=false, depth=1 }) => {
                 lang={lang} />
               <i className="dropdown icon"></i>
               <div className="menu">
-                <NavItem
-                  item={item}
-                  lang={lang} />
+                { config.settings.dropdownmenu.selfInContents &&
+                  <NavItem
+                    item={item}
+                    lang={lang} />
+                }
                 <NavItems items={item.items}
                           lang={lang}
                           interior={true}

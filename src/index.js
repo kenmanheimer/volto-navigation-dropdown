@@ -3,6 +3,11 @@ export default function applyConfig(config) {
   config.settings = {
     ...config.settings,
     navDepth: 100,
+    // In your config set selfInContents false to inhibit dropdown
+    // submenus from including an entry for the container:
+    dropdownmenu: {
+      selfInContents: true,
+    },
   };
   return config
 }
