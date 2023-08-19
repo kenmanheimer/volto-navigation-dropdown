@@ -15,9 +15,14 @@ const NavItems = ({ items, lang, interior=false, depth=1 }) => {
               <i className="dropdown icon"></i>
               <div className="menu">
                 { config.settings.dropdownmenu.selfInContents &&
-                  <NavItem
-                    item={item}
-                    lang={lang} />
+                  (
+                    <>
+                      <NavItem
+                        item={item}
+                        lang={lang} />
+                      <div className="ui divider"></div>
+                    </>
+                  )
                 }
                 <NavItems items={item.items}
                           lang={lang}
