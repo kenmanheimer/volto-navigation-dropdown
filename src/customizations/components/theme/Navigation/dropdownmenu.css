@@ -9,10 +9,6 @@
   font-size: 1em !important;           /* Make icon proportional to text. */
   padding: 0em !important;
 }
-.menu-head-item {
-  border-bottom: solid thin;
-}
-
 .ui.menu .item > i.dropdown.icon {
   float: right;
 }
