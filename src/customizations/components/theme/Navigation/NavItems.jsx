@@ -1,7 +1,6 @@
 import React from 'react';
 import config from '@plone/volto/registry';
 import NavItem from '@plone/volto/components/theme/Navigation/NavItem';
-import { Dropdown } from 'semantic-ui-react';
 import './dropdownmenu.css';
 
 const NavItems = ({ items, lang, interior=false, depth=1 }) => {
