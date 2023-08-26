@@ -46,7 +46,7 @@ setting variable:
   To inhibit the redundant entry include:
 
       if (config.settings.dropdownmenu) {
-        config.settings.dropdownmenu = false;
+        config.settings.dropdownmenu.selfInContents = false;
       }
 
   in your instance configuration.
