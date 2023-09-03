@@ -18,16 +18,19 @@ community: [Work On Plone 6 Navigation Menus - Development / Plone 6 UI
 Further work needed:
 
 * Screen boundaries are not handled well, so that entries in hierarchies
-  that stretch to the edge of the screen can be unselectable. This is a
-  problem in the underlying React libraries but could be handled with edge
-  detection and menu-opening changes. I haven't hit up against the limits
-  in practical applications.
-* There are some menu layout irregularities:
-  * Unintended indentation of entries for nested containers
+  that stretch to the edge of the screen could be unreachable and
+  unselectable. This is a problem in the underlying React libraries but
+  could be handled with edge detection and menu-opening changes. I haven't
+  hit up against the limits in practical applications.
+* The styling is irregular and needs rationalizing.
+  * In general the layout provisions are just expedient. They need to be
+    thoroughly thought through and implemented by someone with ui design
+    and styling expertise.
+  * There's unintended and ragged indentation of entries for containers.
   * Excessive right justification for folder icons in entries whose titles
     are wrapped.
-* General parameterization of layout parameters like menu minimum and
-  maximum width.
+* General parameterization is needed for layout parameters like menu
+  minimum and maximum width.
 
 Version 0.3.0 introduces a configurable menu layout change, governed by a
 setting variable:
