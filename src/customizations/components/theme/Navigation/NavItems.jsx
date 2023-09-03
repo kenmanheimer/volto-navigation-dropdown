@@ -13,17 +13,25 @@ const NavItems = ({ items, lang, interior=false, depth=1 }) => {
                 item={item}
                 lang={lang} />
               <i className="dropdown icon"></i>
-              <div className="menu">
-                { config.settings.dropdownmenu.selfInContents &&
+              { config.settings.dropdownmenu.selfInContents ? (
+                <div className="menu self-container">
                   <NavItem
                     item={item}
                     lang={lang} />
-                }
-                <NavItems items={item.items}
-                          lang={lang}
-                          interior={true}
-                          depth={depth+1}/>
-              </div>
+                  <NavItems items={item.items}
+                            lang={lang}
+                            interior={true}
+                            depth={depth+1}/>
+                </div>
+              ) : (
+                <div className="menu">
+                  <NavItems items={item.items}
+                            lang={lang}
+                            interior={true}
+                            depth={depth+1}/>
+                </div>
+              )
+              }
             </div>
         ) : (
           ( depth > 1 ) ? (
