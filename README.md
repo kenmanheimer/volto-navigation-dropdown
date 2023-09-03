@@ -17,6 +17,9 @@ community: [Work On Plone 6 Navigation Menus - Development / Plone 6 UI
 
 Further work needed:
 
+* Does not respect Volto control panel Navigation depth setting.
+  * It doesn't make sense to prevent navigation by menu beyond some
+    arbitrary depth.
 * Screen boundaries are not handled well, so that entries in hierarchies
   that stretch to the edge of the screen could be unreachable and
   unselectable. This is a problem in the underlying React libraries but
