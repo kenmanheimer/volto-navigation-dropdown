@@ -32,7 +32,7 @@ Further work needed:
 * General parameterization is needed for layout parameters like menu
   minimum and maximum width.
 
-Version 0.3.0 introduces a configurable menu layout change, governed by a
+Version 0.3 introduces a configurable menu layout change, governed by a
 setting variable:
 
 * `config.settings.dropdownmenu.selfInContents` true (the default) causes the first
