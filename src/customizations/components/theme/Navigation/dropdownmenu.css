@@ -29,7 +29,7 @@
   padding: 0em !important;
   margin: 0em !important;
 }
-.ui.dropdown .menu.self-container > .item:first-child, .dropdown-popup .ui.popup .menu > .item:first-child {
+.ui.dropdown .menu.self-container > .item:first-child {
   text-decoration: underline gray;
 }
 .ui.secondary.menu .dropdown.item > .menu, .ui.text.menu .dropdown.item > .menu {
