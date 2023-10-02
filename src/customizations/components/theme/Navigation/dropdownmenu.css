@@ -1,7 +1,8 @@
+.navigation .ui.secondary.pointing.menu .item:not(.filtered),
 .ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
   display: -webkit-box !important;
-  min-width: 12em;
-  max-width: 15em;
+  min-width: 7em;
+  max-width: 10em;
   white-space: wrap;
 }
 .ui.dropdown.item i.icon,
