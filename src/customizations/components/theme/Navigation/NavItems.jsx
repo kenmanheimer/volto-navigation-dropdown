@@ -9,9 +9,14 @@ const NavItems = ({ items, lang, interior=false, depth=1 }) => {
       {items.map((item) =>
         item && item.items && item.items.length > 0 ? (
             <div className="ui simple dropdown item" key={item.url} >
-              <NavItem
-                item={item}
-                lang={lang} />
+              { config.settings.dropdownmenu.selfInContents ? (
+                <div class="menu-title"> {item.title} </div>
+              ) : (
+                <NavItem
+                  item={item}
+                  lang={lang} />
+              )
+              }
               <i className="dropdown icon"></i>
               { config.settings.dropdownmenu.selfInContents ? (
                 <div className="menu self-container">
