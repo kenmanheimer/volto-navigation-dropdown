@@ -10,7 +10,7 @@ const NavItems = ({ items, lang, interior=false, depth=1 }) => {
         item && item.items && item.items.length > 0 ? (
             <div className="ui simple dropdown item" key={item.url} >
               { config.settings.dropdownmenu.selfInContents ? (
-                <div class="menu-title"> {item.title} </div>
+                <div className="menu-title"> {item.title} </div>
               ) : (
                 <NavItem
                   item={item}
