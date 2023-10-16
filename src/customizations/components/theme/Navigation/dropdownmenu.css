@@ -11,6 +11,12 @@
   font-weight: 500;
 }
 
+.mobile-menu-nav .ui.pointing.secondary.stackable.menu {
+  /* So the navbar is always columnar on mobile.
+     NOTE: This should be the Volto default! */
+  flex-direction: column;
+}
+
 .navigation .ui.secondary.pointing.menu .item:not(.filtered),
 .ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
   display: -webkit-box !important;
