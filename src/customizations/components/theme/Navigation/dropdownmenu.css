@@ -41,8 +41,8 @@
 }
 .navigation .ui.secondary.pointing.menu .item, .tools .ui.secondary.pointing.menu .item {
   padding: 0em !important;
-  margin: 0em 10px 0em 5px !important;  /* Be careful: this can push icon being outside menu box! */
-  text-transform: none !important;     /* Don't upcase container titles*/
+  margin: 0em 7px 0em 0px !important;
+  text-transform: none !important;  /* Don't normalize container titles */
 }
 .ui.menu .item > i.dropdown.icon {
   padding: 0em !important;
