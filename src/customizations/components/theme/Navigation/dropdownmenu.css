@@ -19,11 +19,20 @@
 
 .navigation .ui.secondary.pointing.menu .item:not(.filtered),
 .ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
-  display: -webkit-box !important;
-  min-width: 7em;
+  display: flex !important;
+  align-items: normal;
+  /* ** min-width causes excessive whitespace in top menubar items. *
+  /* min-width: 7em; */
   max-width: 11em;
   white-space: wrap;
+  width: min-content;
+  line-height: 1.1;
 }
+
+.ui.menu:not(.vertical) .item {
+  align-items: top !important;
+}
+
 .ui.dropdown.item i.icon,
 .ui.dropdown.item i.icons {
   font-size: 1em !important;           /* Make icon proportional to text. */
