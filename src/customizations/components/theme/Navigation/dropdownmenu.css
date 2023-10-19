@@ -27,6 +27,11 @@
   width: min-content;
   line-height: 1.1;
 }
+
+.ui.menu:not(.vertical) .item {
+  align-items: top !important;
+}
+
 .ui.dropdown.item i.icon,
 .ui.dropdown.item i.icons {
   font-size: 1em !important;           /* Make icon proportional to text. */

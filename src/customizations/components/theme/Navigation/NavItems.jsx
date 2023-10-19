@@ -8,7 +8,7 @@ const NavItems = ({ items, lang, interior=false, depth=1 }) => {
     <>
       {items.map((item) =>
         item && item.items && item.items.length > 0 ? (
-            <div className="ui simple dropdown" key={item.url} >
+            <div className="ui simple dropdown item" key={item.url} >
               <NavItem
                 item={item}
                 lang={lang} />
