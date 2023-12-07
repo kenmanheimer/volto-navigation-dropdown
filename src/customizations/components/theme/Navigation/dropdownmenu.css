@@ -58,6 +58,11 @@
 }
 .ui.dropdown .menu.self-container > .item:first-child {
   text-decoration: underline gray;
+  /* More distinctive but might make the entries seem unselectable. */
+  /*
+    border: lightgray solid 2px;
+    font-variant: petite-caps;
+    */
 }
 .ui.secondary.menu .dropdown.item > .menu, .ui.text.menu .dropdown.item > .menu {
   /* Effectively eliminate gap between base menu element and offspring menu: */
