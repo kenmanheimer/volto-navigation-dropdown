@@ -23,7 +23,7 @@
   align-items: normal;
   min-width: 7em;
   max-width: 11em;
-  white-space: wrap;
+  white-space: normal;
   width: min-content;
   line-height: 1.1;
 }
